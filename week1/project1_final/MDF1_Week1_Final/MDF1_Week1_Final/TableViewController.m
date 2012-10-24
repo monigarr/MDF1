@@ -136,8 +136,10 @@
     NSString *vitaminSelected = [vitaminArray objectAtIndex:[indexPath row]];
     
     //connect both strings above for detailView
-    NSString *foodInfo = [[NSString alloc]
-                          initWithFormat: @"%@ \n \n %@", foodSelected, vitaminSelected];
+    //NSString *foodInfo = [[NSString alloc] initWithFormat: @"%@ \n \n %@", foodSelected, vitaminSelected];
+    
+    //avoid using alloc and let the core lang framework manage the allocation.
+    NSString *foodInfo = [NSString stringWithFormat:@"%@\n\n%@", foodSelected, vitaminSelected];
     
     // show detail view
     // http://iphonedevsdk.com/forum/iphone-sdk-development/80644-subview-not-displaying-in-uitableviewcontroller.html
@@ -156,13 +158,13 @@
             DetailViewController *details = [[DetailViewController alloc]initWithNibName:@"DetailViewController_iPad" bundle:[NSBundle mainBundle]];
             self.detailView = details;
         }
-        
-        //send foodInfo string to detailView
-        detailView.textSelected = foodInfo;
-        
-        //show the detailView
-        [self presentViewController:detailView animated:TRUE completion:nil];
     }
+    
+    //send foodInfo string to detailView
+    detailView.textSelected = foodInfo;
+    
+    //show the detailView
+    [self presentViewController:detailView animated:TRUE completion:nil];
 }
 
 #pragma mark Table Custom Cells
