@@ -43,7 +43,7 @@
 #pragma mark load data
 - (void)viewDidLoad
 {
-    //create array of 20 items for my list
+    //create array of 20 items for my list of raw vegan food items.
     //http://www.ewg.org/foodnews/summary/
     //http://www.care2.com/greenliving/the-top-10-foods-to-eat-organically.html
     foodArray = [[NSMutableArray alloc] initWithObjects:
@@ -68,28 +68,53 @@
                  @"Nectarine",
                  @"Collard",
                  nil];
+    // create array of 20 vitamins to match my 20 food items in list.
     vitaminArray = [[NSMutableArray alloc] initWithObjects:
-                    @"Vitamin C.\n Mix with maple syrup and cinnamon to eat whole. Blend with dark leafy greens for raw vegan smoothies.",
-                    @"Carotenoids.\nMix with sage and walnuts for salads.",
-                    @"Vitamin C.\nChop in big pieces and dip into raw vegan dips. Mix with raw vegan fresh tomatoe sauce.",
-                    @"Vitamin A & C.\nMix with maple syrup, hot peppers, onions, garlic, and your favorite salsa ingredients.",
-                    @"Vitamin C.\n The entire berry including leaves is awesome whole, in salads, and in blended into smoothies.",
-                    @"Vitamin A & C.\n Fast healthy mono meal.  Blend into green smoothies.",
-                    @"Potassium.\n Mono meal, great in salads, and blended into green smoothies.",
-                    @"Vitamin A & C, Calcium, Protein.\n Dark leafy greens provide the most nutrients per calorie. Consider growing your own all year long in your kitchen and small home greenhouse.",
-                    @"Vitamin C.\n Use instead of bread for your sandwiches and wraps.",
-                    @"Vitamin C.\n Excellant brain food. Blend with fresh coconut water and or nut/seed mylks with maple syrup or date paste.",
-                    @"Protein & Calcium.\n Fast mono meal. Chop up and mix with avocado and your favorite seasonings to eat as a salad or dip.",
-                    @"Protein & Calcium.\n Marinate in your favorite dressing then dehydrate for healthy unique snack.",
-                    @"Vitamin C.\n Marinate in your favorite raw vegan dressing. Eat fresh or dehydrated.",
-                    @"Carotenoids.\n Marinate in your fave raw vegan dressing. Eat fresh or dehydrate.",
-                    @"Vitamin K.\n Fresh right off the cob tastes so awesome you will wonder why you ever boiled it in the past.  Also great for making raw vegan corn chips.",
-                    @"Vitamin B, Calcium, Protein.\n Dark leafy greens provide the most nutrients per calorie and should be 80% of our daily food intake for raw vegans. Provide more protein than meat and dairy products.",
-                    @"Vitamin A, C & Potassium.\n Mono meal. Great in salads, salsa, and smoothies.",
-                    @"Protein & Calcium.\n Mono meal or mix with other melons.",
-                    @"Vitamin C.\n Great as a mono meal, in salads, gazpacho style soups, and smoothies.",
-                    @"Protein & Calcium.\n Use instead of bread and flour wraps.  Marinate in your fave raw vegan dressing to improve the taste if you are not accustomed to the bitterness.",
+                    @"Vitamin C.",
+                    @"Carotenoids.",
+                    @"Vitamin C.",
+                    @"Vitamin A & C.",
+                    @"Vitamin C.",
+                    @"Vitamin A & C.",
+                    @"Potassium.",
+                    @"Vitamin A & C, Calcium, Protein.",
+                    @"Vitamin C.",
+                    @"Vitamin C.",
+                    @"Protein & Calcium.",
+                    @"Protein & Calcium.",
+                    @"Vitamin C.",
+                    @"Carotenoids.",
+                    @"Vitamin K.",
+                    @"Vitamin B, Calcium, Protein.",
+                    @"Vitamin A, C & Potassium.",
+                    @"Protein & Calcium.",
+                    @"Vitamin C.",
+                    @"Protein & Calcium.",
                     nil];
+    // create array of 20 raw vegan ideas for the food items in list.
+    // only show this on the Detail View
+    foodItemTipsArray = [[NSMutableArray alloc] initWithObjects:
+                         @"Mix with maple syrup and cinnamon to eat whole. Blend with dark leafy greens for raw vegan smoothies.",
+                         @"Mix with sage and walnuts for salads.",
+                         @"Chop in big pieces and dip into raw vegan dips. Mix with raw vegan fresh tomatoe sauce.",
+                         @"Mix with maple syrup, hot peppers, onions, garlic, and your favorite salsa ingredients.",
+                         @"The entire berry including leaves is awesome whole, in salads, and in blended into smoothies.",
+                         @"Fast healthy mono meal.  Blend into green smoothies.",
+                         @"Mono meal, great in salads, and blended into green smoothies.",
+                         @"Dark leafy greens provide the most nutrients per calorie. Consider growing your own all year long in your kitchen and small home greenhouse.",
+                         @"Use instead of bread for your sandwiches and wraps.",
+                         @"Excellant brain food. Blend with fresh coconut water and or nut/seed mylks with maple syrup or date paste.",
+                         @"Fast mono meal. Chop up and mix with avocado and your favorite seasonings to eat as a salad or dip.",
+                         @"Marinate in your favorite dressing then dehydrate for healthy unique snack.",
+                         @"Marinate in your favorite raw vegan dressing. Eat fresh or dehydrated.",
+                         @"Marinate in your fave raw vegan dressing. Eat fresh or dehydrate.",
+                         @"Fresh right off the cob tastes so awesome you will wonder why you ever boiled it in the past.  Also great for making raw vegan corn chips.",
+                         @"Dark leafy greens provide the most nutrients per calorie and should be 80% of our daily food intake for raw vegans. Provide more protein than meat and dairy products.",
+                         @"Mono meal. Great in salads, salsa, and smoothies.",
+                         @"Mono meal or mix with other melons.",
+                         @"Great as a mono meal, in salads, gazpacho style soups, and smoothies.",
+                         @"Use instead of bread and flour wraps.  Marinate in your fave raw vegan dressing to improve the taste if you are not accustomed to the bitterness.",
+                         nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -131,12 +156,13 @@
     
     NSString *foodSelected = [foodArray objectAtIndex:[indexPath row]];
     NSString *vitaminSelected = [vitaminArray objectAtIndex:[indexPath row]];
+    NSString *foodItemTips = [foodItemTipsArray objectAtIndex:[indexPath row]];
     
     //connect both strings above for detailView
     //NSString *foodInfo = [[NSString alloc] initWithFormat: @"%@ \n \n %@", foodSelected, vitaminSelected];
     
     //avoid using alloc and let the core lang framework manage the allocation.
-    NSString *foodInfo = [NSString stringWithFormat:@"%@\n%@", foodSelected, vitaminSelected];
+    NSString *foodInfo = [NSString stringWithFormat:@"%@\n %@\n %@", foodSelected, vitaminSelected, foodItemTips];
     
     //set to nil so that we don't show the cell selected in the last round
     self.detailView = nil;

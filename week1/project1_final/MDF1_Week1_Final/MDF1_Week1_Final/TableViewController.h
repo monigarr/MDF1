@@ -14,6 +14,7 @@
     IBOutlet UITableView *myTableView;
     NSMutableArray *foodArray;
     NSMutableArray *vitaminArray;
+    NSMutableArray *foodItemTipsArray;
     DetailViewController *detailView;
 }
 
