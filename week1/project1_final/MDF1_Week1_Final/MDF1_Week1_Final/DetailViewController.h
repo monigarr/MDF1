@@ -19,5 +19,6 @@
 
 -(id)initWithTextSelected:(NSString *) text;
 
+//button to close this detail view
 -(IBAction)onClose:(id)sender;
 @end

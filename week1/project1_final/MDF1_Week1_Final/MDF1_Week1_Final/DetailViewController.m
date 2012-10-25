@@ -38,17 +38,13 @@
 - (void)viewDidLoad
 {
     [detail setText:[self textSelected]];
-    self.title = @"Details";
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+//button to close this view
+//setup in IB
 -(IBAction)onClose:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];

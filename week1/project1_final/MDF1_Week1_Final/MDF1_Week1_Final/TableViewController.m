@@ -36,6 +36,8 @@
 //Button to close this view
 -(IBAction)onClose:(id)sender
 {
+    //close the TableViewController to show the
+    //Home ViewController again.
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
@@ -69,6 +71,7 @@
                  @"Collard",
                  nil];
     // create array of 20 vitamins to match my 20 food items in list.
+    // these will show in label next to the food item name in the list.
     vitaminArray = [[NSMutableArray alloc] initWithObjects:
                     @"Vitamin C.",
                     @"Carotenoids.",
@@ -91,8 +94,8 @@
                     @"Vitamin C.",
                     @"Protein & Calcium.",
                     nil];
-    // create array of 20 raw vegan ideas for the food items in list.
-    // only show this on the Detail View
+    // create array of 20 raw vegan tips for each of the food items in list.
+    // only show tips on the Detail View
     foodItemTipsArray = [[NSMutableArray alloc] initWithObjects:
                          @"Mix with maple syrup and cinnamon to eat whole. Blend with dark leafy greens for raw vegan smoothies.",
                          @"Mix with sage and walnuts for salads.",
@@ -128,6 +131,7 @@
 #pragma mark Table Rows
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    //make one row in the table for each food item in the array
     return [foodArray count];
 }
 
@@ -138,12 +142,13 @@
     return UITableViewCellEditingStyleDelete;
 }
 
+
 #pragma mark Table Editing View
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
-        NSLog(@"we want to delete row=%d", indexPath.row);
+        //NSLog(@"we want to delete row=%d", indexPath.row);
         [foodArray removeObjectAtIndex:indexPath.row];
         [myTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
                            withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -159,12 +164,9 @@
     NSString *foodItemTips = [foodItemTipsArray objectAtIndex:[indexPath row]];
     
     //connect both strings above for detailView
-    //NSString *foodInfo = [[NSString alloc] initWithFormat: @"%@ \n \n %@", foodSelected, vitaminSelected];
-    
-    //avoid using alloc and let the core lang framework manage the allocation.
     NSString *foodInfo = [NSString stringWithFormat:@"%@\n %@\n %@", foodSelected, vitaminSelected, foodItemTips];
     
-    //set to nil so that we don't show the cell selected in the last round
+    //start with nil so we don't show a previously selected cell.
     self.detailView = nil;
     
     // show detail view
@@ -172,9 +174,11 @@
     if (self.detailView == nil)
     {
         //show either iphone or ipad xib
+        //refactor when I learn how to do this OOD
+        //should not be repeating code - bad practice
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
-            //show iphone xib
+            //iphone xib
             DetailViewController *details = [[DetailViewController alloc]initWithNibName:@"DetailViewController_iPhone" bundle:[NSBundle mainBundle]];
             self.detailView = details;
             //send foodInfo string to detailView
@@ -182,7 +186,7 @@
         }
         else
         {
-            //show pad xib
+            //iPad xib
             DetailViewController *details = [[DetailViewController alloc]initWithNibName:@"DetailViewController_iPad" bundle:[NSBundle mainBundle]];
             self.detailView = details;
             //send foodInfo string to detailView

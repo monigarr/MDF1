@@ -18,21 +18,15 @@
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor whiteColor];
-    
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)onClick:(id)sender
 {
     //show tableview list when button is clicked
     //either the iphone or ipad xib view
+    //refactor this when I learn how to do this better with OOD
+    //*show iPhone xib or iPad xib based on user's device
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
     {
         //iphone view

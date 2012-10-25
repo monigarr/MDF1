@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 {
-    //set intro text programatically
     IBOutlet UITextView *introText;
 }
 

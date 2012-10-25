@@ -22,10 +22,10 @@
 @property (strong, nonatomic) NSMutableArray *vitaminArray;
 @property (nonatomic, retain) DetailViewController *detailView;
 
-//button to edit list items
+//button to edit list of food items
 - (IBAction)clickEdit:(id)sender;
 
-//button to close this view and show home
+//button to close list of food items and show home (ViewController)
 -(IBAction)onClose:(id)sender;
 
 @end
