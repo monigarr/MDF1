@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    //set intro text programatically
+    IBOutlet UITextView *introText;
+}
 
 //button to show list of items
 //on the TableViewController xib view

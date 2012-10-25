@@ -24,4 +24,7 @@
 //button to edit list items
 - (IBAction)clickEdit:(id)sender;
 
+//button to close this view and show home
+-(IBAction)onClose:(id)sender;
+
 @end
