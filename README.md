@@ -7,13 +7,15 @@ MDF1
 	Student:  Monica Peters
 	Mobile Development Frameworks 1
 
-	XCode version 4.5
+	XCode version 4.5.1
 	Target iPhone & iPad iOS 6
-	Mountain Lion
+	Mountain Lion OSX 10.8.2
 
 PROJECT 1
 ==========
 	Due: October 25th 2012
+	Submitted to Teacher: October 24th 2012
+	Verified it Builds, Compiles, and Runs for both iPhone & iPad Simulators, and actual iPad 2
 	Video Review & Demo:
 	Your project will need to have the following features:
 		A UILabel at the top with the title of your application. The UILabel should have a background color.
