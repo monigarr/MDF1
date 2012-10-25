@@ -25,7 +25,6 @@
 		513148A3163750950015866F /* TableViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513148A2163750940015866F /* TableViewController_iPad.xib */; };
 		513148A5163750A60015866F /* TableViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513148A4163750A60015866F /* TableViewController_iPhone.xib */; };
 		513148A7163750C30015866F /* CustomCellView_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513148A6163750C30015866F /* CustomCellView_iPhone.xib */; };
-		513148A9163750DB0015866F /* CustomCellView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513148A8163750DB0015866F /* CustomCellView_iPad.xib */; };
 		513148AB163750F90015866F /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513148AA163750F90015866F /* DetailViewController_iPhone.xib */; };
 		513148AD1637510D0015866F /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513148AC1637510D0015866F /* DetailViewController_iPad.xib */; };
 		513148AF16375DE80015866F /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 513148AE16375DE80015866F /* 57x57.png */; };
@@ -39,6 +38,7 @@
 		513148BF16375EB20015866F /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 513148BE16375EB20015866F /* Default-Landscape@2x~ipad.png */; };
 		513148C116375EC00015866F /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 513148C016375EC00015866F /* 72x72.png */; };
 		513148C316375EC50015866F /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 513148C216375EC50015866F /* 144x144.png */; };
+		518655551638CB42009AE086 /* CustomCellView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 518655541638CB42009AE086 /* CustomCellView_iPad.xib */; };
 		5189FA7D16378A3F006857FF /* stock-photo-red-tomato-vegetable-with-cut-isolated-on-white-background-34794595.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5189FA7C16378A3F006857FF /* stock-photo-red-tomato-vegetable-with-cut-isolated-on-white-background-34794595.jpg */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,6 @@
 		513148A2163750940015866F /* TableViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController_iPad.xib; sourceTree = "<group>"; };
 		513148A4163750A60015866F /* TableViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController_iPhone.xib; sourceTree = "<group>"; };
 		513148A6163750C30015866F /* CustomCellView_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView_iPhone.xib; sourceTree = "<group>"; };
-		513148A8163750DB0015866F /* CustomCellView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView_iPad.xib; sourceTree = "<group>"; };
 		513148AA163750F90015866F /* DetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		513148AC1637510D0015866F /* DetailViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController_iPad.xib; sourceTree = "<group>"; };
 		513148AE16375DE80015866F /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 57x57.png; path = ../57x57.png; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		513148BE16375EB20015866F /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		513148C016375EC00015866F /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72x72.png; path = ../72x72.png; sourceTree = "<group>"; };
 		513148C216375EC50015866F /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 144x144.png; path = ../144x144.png; sourceTree = "<group>"; };
+		518655541638CB42009AE086 /* CustomCellView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView_iPad.xib; sourceTree = "<group>"; };
 		5189FA7C16378A3F006857FF /* stock-photo-red-tomato-vegetable-with-cut-isolated-on-white-background-34794595.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stock-photo-red-tomato-vegetable-with-cut-isolated-on-white-background-34794595.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +178,7 @@
 				513148A2163750940015866F /* TableViewController_iPad.xib */,
 				513148A4163750A60015866F /* TableViewController_iPhone.xib */,
 				513148A6163750C30015866F /* CustomCellView_iPhone.xib */,
-				513148A8163750DB0015866F /* CustomCellView_iPad.xib */,
+				518655541638CB42009AE086 /* CustomCellView_iPad.xib */,
 				513148AA163750F90015866F /* DetailViewController_iPhone.xib */,
 				513148AC1637510D0015866F /* DetailViewController_iPad.xib */,
 				5131488E16374EBC0015866F /* ViewController_iPhone.xib */,
@@ -247,7 +247,6 @@
 				513148A3163750950015866F /* TableViewController_iPad.xib in Resources */,
 				513148A5163750A60015866F /* TableViewController_iPhone.xib in Resources */,
 				513148A7163750C30015866F /* CustomCellView_iPhone.xib in Resources */,
-				513148A9163750DB0015866F /* CustomCellView_iPad.xib in Resources */,
 				513148AB163750F90015866F /* DetailViewController_iPhone.xib in Resources */,
 				513148AD1637510D0015866F /* DetailViewController_iPad.xib in Resources */,
 				513148AF16375DE80015866F /* 57x57.png in Resources */,
@@ -262,6 +261,7 @@
 				513148C116375EC00015866F /* 72x72.png in Resources */,
 				513148C316375EC50015866F /* 144x144.png in Resources */,
 				5189FA7D16378A3F006857FF /* stock-photo-red-tomato-vegetable-with-cut-isolated-on-white-background-34794595.jpg in Resources */,
+				518655551638CB42009AE086 /* CustomCellView_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

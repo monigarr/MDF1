@@ -39,14 +39,6 @@
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 #pragma mark load data
 - (void)viewDidLoad
@@ -179,7 +171,7 @@
 #pragma mark Table Custom Cells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //set this in IB xib too
+    //set identifier in IB too
     static NSString *CellIdentifier = @"Cell";
     
     CustomCellView *cell = [myTableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -206,6 +198,8 @@
         {
             //show ipad xib
             NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView_iPad" owner:nil options:nil];
+            
+            //check if view is custom table cell
             for (UIView *view in views)
             {
                 if([view isKindOfClass:[CustomCellView class]])

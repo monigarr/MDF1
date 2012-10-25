@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad
 {
-    //create my intro text for intro label here
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
