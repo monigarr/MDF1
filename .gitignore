@@ -33,3 +33,6 @@ week1/project1_final/MDF1_Week1_Final/MDF1_Week1_Final/._main.m
 week1/project1_final/MDF1_Week1_Final/MDF1_Week1_Final/._stock-photo-red-tomato-vegetable-with-cut-isolated-on-white-background-34794595.jpg
 week1/project1_final/MDF1_Week1_Final/MDF1_Week1_Final/en.lproj/._InfoPlist.strings
 ._.gitignore
+._.DS_Store
+week1/._.DS_Store
+week1/project1_final/MDF1_Week1_Final/._.DS_Store
