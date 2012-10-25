@@ -16,7 +16,7 @@ PROJECT 1
 	Due: October 25th 2012
 	Submitted to Teacher: October 24th 2012
 	Verified it Builds, Compiles, and Runs for both iPhone & iPad Simulators, and actual iPad 2
-	Video Review & Demo:
+	Video Review & Demo:  http://www.youtube.com/watch?v=P3J87oHlXDU&feature=youtu.be
 	Your project will need to have the following features:
 		A UILabel at the top with the title of your application. The UILabel should have a background color.
 		A UITableView displaying a list of items. The data in this list can be anything you want. At least twenty items must be in the list initially.
