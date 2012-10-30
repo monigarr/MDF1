@@ -28,16 +28,24 @@ PROJECT 1
 
 PROJECT 2
 ==========
-	Due: 
+	Due: November 2nd 2012
+	Submitted to Teacher: October 30th 2012
 	Video Review & Demo:
 	Your project will need to have the following features:
-		A UITabBarControl with at least three tabs.
+		A UITabBarControl with at least three tabs. 
+		     Home, Food, Info
 		One of the tabs must contain a UINavigationController.
+		     Home
 		The child of navigation controller can contain any UI you wish but must have an option to push another view onto the navigationController stack.
-		One tab must use a UITableViewController and contain selectable data. This selectable data MUST then present a detail UIView displaying most information about this item.
+		     see AppDelegate.h comments for how I accomplished this.
+		One tab must use a UITableViewController and contain selectable data. This selectable data MUST then present a detail UIView displaying more information about this item.
+		     Food Tab -> DetailView -> Custom Table Cell
 		One tab can be free form UI.
+		     Info Tab -> button links to webpage url for more info about raw vegan recipes
 		Make sure to add in a default.png graphic and icon.
+		     App icons and launch images included.
 		Draw up a quick flow diagram of your UI and include it in your project.
+		     MDF1/week2/mdf1_project2/mdf1_project2/UI-Diagram.png
 
 PROJECT 3
 ==========
