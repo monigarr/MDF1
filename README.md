@@ -30,7 +30,7 @@ PROJECT 2
 ==========
 	Due: November 2nd 2012
 	Submitted to Teacher: October 30th 2012
-	Video Review & Demo:
+	Video Review & Demo:  http://youtu.be/CB5R0W6KdF0
 	Your project will need to have the following features:
 		A UITabBarControl with at least three tabs. 
 		     Home, Food, Info
