@@ -15,10 +15,20 @@
 #import "MyMapAnnotations.h"
 #import "MyAnnotationView.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <UITableViewDelegate>
 {
     IBOutlet UITableView *myTableView;
+    NSMutableArray *bizNameArray;
+    NSMutableArray *latitudeArray;
+    NSMutableArray *longitudeArray;
+    myMapView *detailView;
 }
+
+@property (strong, nonatomic) NSMutableArray *bizNameArray;
+@property (strong, nonatomic) NSMutableArray *latitudeArray;
+@property (strong, nonatomic) NSMutableArray *longitudeArray;
+@property (nonatomic, retain) myMapView *detailView;
+
 
 -(IBAction)onClick:(id)sender;
 

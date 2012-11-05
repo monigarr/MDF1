@@ -1,8 +1,8 @@
 //
 //  SecondViewController.m
-//  mdf1_week3
+//  mdf1_project3
 //
-//  Created by Monica Peters on 11/3/12.
+//  Created by Monica Peters on 11/4/12.
 //  Copyright (c) 2012 Monica Peters. All rights reserved.
 //
 
@@ -18,8 +18,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Map", @"Map");
-        self.tabBarItem.image = [UIImage imageNamed:@"103-map.png"];
+        self.title = NSLocalizedString(@"Second", @"Second");
+        self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }

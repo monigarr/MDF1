@@ -1,17 +1,16 @@
 //
 //  AppDelegate.m
-//  mdf1_week3
+//  mdf1_project3
 //
-//  Created by Monica Peters on 11/3/12.
+//  Created by Monica Peters on 11/4/12.
 //  Copyright (c) 2012 Monica Peters. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
 #import "FirstViewController.h"
+
 #import "SecondViewController.h"
-#import "MyMapAnnotations.h"
-#import "myMapView.h"
-#import "MyAnnotationView.h"
 
 @implementation AppDelegate
 

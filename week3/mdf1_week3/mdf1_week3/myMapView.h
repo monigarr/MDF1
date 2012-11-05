@@ -11,7 +11,7 @@
 #import "MyMapAnnotations.h"
 #import "MyAnnotationView.h"
 
-@interface myMapView : NSObject
+@interface myMapView : NSObject 
 {
     IBOutlet UIButton *backButton;
     IBOutlet UILabel *bizName;
@@ -28,6 +28,7 @@
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
 
+//button to close this view
 -(IBAction)onClick:(id)sender;
 
 @end

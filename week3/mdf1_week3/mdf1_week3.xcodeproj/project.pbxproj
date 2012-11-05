@@ -29,6 +29,8 @@
 		517C255E1645F46200C82460 /* MyMapAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C255D1645F46200C82460 /* MyMapAnnotations.m */; };
 		517C25611645F52800C82460 /* MyAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25601645F52800C82460 /* MyAnnotationView.m */; };
 		517C25631645F79900C82460 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C25621645F79900C82460 /* MapKit.framework */; };
+		517C256E1646E45400C82460 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C256D1646E45400C82460 /* 103-map.png */; };
+		517C25741646EFAB00C82460 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25731646EFAB00C82460 /* 07-map-marker.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		517C255F1645F52800C82460 /* MyAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotationView.h; sourceTree = "<group>"; };
 		517C25601645F52800C82460 /* MyAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotationView.m; sourceTree = "<group>"; };
 		517C25621645F79900C82460 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		517C256D1646E45400C82460 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map.png"; path = "../../../../../Images/icons/glyphish-icons/icons/103-map.png"; sourceTree = "<group>"; };
+		517C25731646EFAB00C82460 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "../../../../../Images/icons/glyphish-icons/icons/07-map-marker.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				517C25621645F79900C82460 /* MapKit.framework */,
-				517C25521645EEFA00C82460 /* xibs */,
 				517C25271645EED600C82460 /* mdf1_week3 */,
 				517C25201645EED600C82460 /* Frameworks */,
 				517C251E1645EED600C82460 /* Products */,
@@ -112,6 +115,7 @@
 		517C25271645EED600C82460 /* mdf1_week3 */ = {
 			isa = PBXGroup;
 			children = (
+				517C25521645EEFA00C82460 /* xibs */,
 				517C25301645EED600C82460 /* AppDelegate.h */,
 				517C25311645EED600C82460 /* AppDelegate.m */,
 				517C25391645EED700C82460 /* FirstViewController.h */,
@@ -132,6 +136,8 @@
 		517C25281645EED600C82460 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				517C25731646EFAB00C82460 /* 07-map-marker.png */,
+				517C256D1646E45400C82460 /* 103-map.png */,
 				517C25451645EED700C82460 /* second@2x.png */,
 				517C25431645EED700C82460 /* second.png */,
 				517C253C1645EED700C82460 /* first.png */,
@@ -155,6 +161,7 @@
 				517C255A1645F1B600C82460 /* myMapView.xib */,
 			);
 			name = xibs;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +226,8 @@
 				517C25491645EED700C82460 /* FirstViewController.xib in Resources */,
 				517C254C1645EED700C82460 /* SecondViewController.xib in Resources */,
 				517C255B1645F1B600C82460 /* myMapView.xib in Resources */,
+				517C256E1646E45400C82460 /* 103-map.png in Resources */,
+				517C25741646EFAB00C82460 /* 07-map-marker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +371,7 @@
 				517C25511645EED700C82460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
