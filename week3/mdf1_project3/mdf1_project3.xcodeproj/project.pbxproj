@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51447ACF164789D800B571E3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51447ACE164789D800B571E3 /* Default.png */; };
+		51447AD2164789ED00B571E3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51447AD1164789ED00B571E3 /* Default@2x.png */; };
+		51447AD416478A0700B571E3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51447AD316478A0700B571E3 /* Default-568h@2x.png */; };
+		51447AD616478AE000B571E3 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 51447AD516478AE000B571E3 /* 114x114.png */; };
+		51447AD816478C2B00B571E3 /* 57X57.png in Resources */ = {isa = PBXBuildFile; fileRef = 51447AD716478C2B00B571E3 /* 57X57.png */; };
 		517C25911646F27E00C82460 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C25901646F27E00C82460 /* UIKit.framework */; };
 		517C25931646F27E00C82460 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C25921646F27E00C82460 /* Foundation.framework */; };
 		517C25951646F27E00C82460 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C25941646F27E00C82460 /* CoreGraphics.framework */; };
@@ -16,17 +21,25 @@
 		517C25A31646F27E00C82460 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25A21646F27E00C82460 /* Default.png */; };
 		517C25A51646F27E00C82460 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25A41646F27E00C82460 /* Default@2x.png */; };
 		517C25A71646F27E00C82460 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25A61646F27E00C82460 /* Default-568h@2x.png */; };
-		517C25AA1646F27E00C82460 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25A91646F27E00C82460 /* FirstViewController.m */; };
-		517C25AC1646F27E00C82460 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25AB1646F27E00C82460 /* first.png */; };
-		517C25AE1646F27E00C82460 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25AD1646F27E00C82460 /* first@2x.png */; };
-		517C25B11646F27E00C82460 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25B01646F27E00C82460 /* SecondViewController.m */; };
-		517C25B31646F27E00C82460 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25B21646F27E00C82460 /* second.png */; };
-		517C25B51646F27E00C82460 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25B41646F27E00C82460 /* second@2x.png */; };
-		517C25B81646F27F00C82460 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517C25B61646F27F00C82460 /* FirstViewController.xib */; };
-		517C25BB1646F27F00C82460 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517C25B91646F27F00C82460 /* SecondViewController.xib */; };
+		517C25C21646F28C00C82460 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C25C11646F28C00C82460 /* MapKit.framework */; };
+		517C25C51646F2D000C82460 /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25C41646F2D000C82460 /* 07-map-marker.png */; };
+		517C25C71646F2FD00C82460 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 517C25C61646F2FD00C82460 /* 103-map.png */; };
+		517C25CB1646F36E00C82460 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25C91646F36D00C82460 /* ListViewController.m */; };
+		517C25CC1646F36E00C82460 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517C25CA1646F36D00C82460 /* ListViewController.xib */; };
+		517C25D01646F39300C82460 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25CE1646F39300C82460 /* MapViewController.m */; };
+		517C25D11646F39300C82460 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517C25CF1646F39300C82460 /* MapViewController.xib */; };
+		517C25D41646F40800C82460 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25D31646F40800C82460 /* MyAnnotation.m */; };
+		517C25D81646F4DA00C82460 /* MapDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517C25D61646F4DA00C82460 /* MapDetailViewController.m */; };
+		517C25D91646F4DA00C82460 /* MapDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 517C25D71646F4DA00C82460 /* MapDetailViewController.xib */; };
+		517C25E01647879500C82460 /* shield.gif in Resources */ = {isa = PBXBuildFile; fileRef = 517C25DF1647879500C82460 /* shield.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51447ACE164789D800B571E3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		51447AD1164789ED00B571E3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		51447AD316478A0700B571E3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		51447AD516478AE000B571E3 /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		51447AD716478C2B00B571E3 /* 57X57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57X57.png; sourceTree = "<group>"; };
 		517C258C1646F27E00C82460 /* mdf1_project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdf1_project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		517C25901646F27E00C82460 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		517C25921646F27E00C82460 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,16 +53,21 @@
 		517C25A21646F27E00C82460 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		517C25A41646F27E00C82460 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		517C25A61646F27E00C82460 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		517C25A81646F27E00C82460 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		517C25A91646F27E00C82460 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		517C25AB1646F27E00C82460 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		517C25AD1646F27E00C82460 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		517C25AF1646F27E00C82460 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		517C25B01646F27E00C82460 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		517C25B21646F27E00C82460 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		517C25B41646F27E00C82460 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		517C25B71646F27F00C82460 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		517C25BA1646F27F00C82460 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		517C25C11646F28C00C82460 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		517C25C41646F2D000C82460 /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "07-map-marker.png"; path = "../../../../../Images/icons/glyphish-icons/icons/07-map-marker.png"; sourceTree = "<group>"; };
+		517C25C61646F2FD00C82460 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map.png"; path = "../../../../../Images/icons/glyphish-icons/icons/103-map.png"; sourceTree = "<group>"; };
+		517C25C81646F36D00C82460 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		517C25C91646F36D00C82460 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		517C25CA1646F36D00C82460 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		517C25CD1646F39300C82460 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		517C25CE1646F39300C82460 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		517C25CF1646F39300C82460 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		517C25D21646F40800C82460 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		517C25D31646F40800C82460 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		517C25D51646F4DA00C82460 /* MapDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDetailViewController.h; sourceTree = "<group>"; };
+		517C25D61646F4DA00C82460 /* MapDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDetailViewController.m; sourceTree = "<group>"; };
+		517C25D71646F4DA00C82460 /* MapDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapDetailViewController.xib; sourceTree = "<group>"; };
+		517C25DF1647879500C82460 /* shield.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = shield.gif; path = ../../../../../Images/icons/mini_icons2/shield.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517C25C21646F28C00C82460 /* MapKit.framework in Frameworks */,
 				517C25911646F27E00C82460 /* UIKit.framework in Frameworks */,
 				517C25931646F27E00C82460 /* Foundation.framework in Frameworks */,
 				517C25951646F27E00C82460 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +88,11 @@
 		517C25811646F27E00C82460 = {
 			isa = PBXGroup;
 			children = (
+				51447AD716478C2B00B571E3 /* 57X57.png */,
+				51447AD516478AE000B571E3 /* 114x114.png */,
+				51447AD316478A0700B571E3 /* Default-568h@2x.png */,
+				51447AD1164789ED00B571E3 /* Default@2x.png */,
+				51447ACE164789D800B571E3 /* Default.png */,
 				517C25961646F27E00C82460 /* mdf1_project3 */,
 				517C258F1646F27E00C82460 /* Frameworks */,
 				517C258D1646F27E00C82460 /* Products */,
@@ -86,6 +110,7 @@
 		517C258F1646F27E00C82460 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				517C25C11646F28C00C82460 /* MapKit.framework */,
 				517C25901646F27E00C82460 /* UIKit.framework */,
 				517C25921646F27E00C82460 /* Foundation.framework */,
 				517C25941646F27E00C82460 /* CoreGraphics.framework */,
@@ -98,16 +123,15 @@
 			children = (
 				517C259F1646F27E00C82460 /* AppDelegate.h */,
 				517C25A01646F27E00C82460 /* AppDelegate.m */,
-				517C25A81646F27E00C82460 /* FirstViewController.h */,
-				517C25A91646F27E00C82460 /* FirstViewController.m */,
-				517C25AB1646F27E00C82460 /* first.png */,
-				517C25AD1646F27E00C82460 /* first@2x.png */,
-				517C25AF1646F27E00C82460 /* SecondViewController.h */,
-				517C25B01646F27E00C82460 /* SecondViewController.m */,
-				517C25B21646F27E00C82460 /* second.png */,
-				517C25B41646F27E00C82460 /* second@2x.png */,
-				517C25B61646F27F00C82460 /* FirstViewController.xib */,
-				517C25B91646F27F00C82460 /* SecondViewController.xib */,
+				517C25C81646F36D00C82460 /* ListViewController.h */,
+				517C25C91646F36D00C82460 /* ListViewController.m */,
+				517C25D51646F4DA00C82460 /* MapDetailViewController.h */,
+				517C25D61646F4DA00C82460 /* MapDetailViewController.m */,
+				517C25CD1646F39300C82460 /* MapViewController.h */,
+				517C25CE1646F39300C82460 /* MapViewController.m */,
+				517C25D21646F40800C82460 /* MyAnnotation.h */,
+				517C25D31646F40800C82460 /* MyAnnotation.m */,
+				517C25C31646F2A300C82460 /* xibs */,
 				517C25971646F27E00C82460 /* Supporting Files */,
 			);
 			path = mdf1_project3;
@@ -116,6 +140,9 @@
 		517C25971646F27E00C82460 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				517C25DF1647879500C82460 /* shield.gif */,
+				517C25C61646F2FD00C82460 /* 103-map.png */,
+				517C25C41646F2D000C82460 /* 07-map-marker.png */,
 				517C25981646F27E00C82460 /* mdf1_project3-Info.plist */,
 				517C25991646F27E00C82460 /* InfoPlist.strings */,
 				517C259C1646F27E00C82460 /* main.m */,
@@ -125,6 +152,16 @@
 				517C25A61646F27E00C82460 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		517C25C31646F2A300C82460 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				517C25D71646F4DA00C82460 /* MapDetailViewController.xib */,
+				517C25CF1646F39300C82460 /* MapViewController.xib */,
+				517C25CA1646F36D00C82460 /* ListViewController.xib */,
+			);
+			name = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,12 +219,17 @@
 				517C25A31646F27E00C82460 /* Default.png in Resources */,
 				517C25A51646F27E00C82460 /* Default@2x.png in Resources */,
 				517C25A71646F27E00C82460 /* Default-568h@2x.png in Resources */,
-				517C25AC1646F27E00C82460 /* first.png in Resources */,
-				517C25AE1646F27E00C82460 /* first@2x.png in Resources */,
-				517C25B31646F27E00C82460 /* second.png in Resources */,
-				517C25B51646F27E00C82460 /* second@2x.png in Resources */,
-				517C25B81646F27F00C82460 /* FirstViewController.xib in Resources */,
-				517C25BB1646F27F00C82460 /* SecondViewController.xib in Resources */,
+				517C25C51646F2D000C82460 /* 07-map-marker.png in Resources */,
+				517C25C71646F2FD00C82460 /* 103-map.png in Resources */,
+				517C25CC1646F36E00C82460 /* ListViewController.xib in Resources */,
+				517C25D11646F39300C82460 /* MapViewController.xib in Resources */,
+				517C25D91646F4DA00C82460 /* MapDetailViewController.xib in Resources */,
+				517C25E01647879500C82460 /* shield.gif in Resources */,
+				51447ACF164789D800B571E3 /* Default.png in Resources */,
+				51447AD2164789ED00B571E3 /* Default@2x.png in Resources */,
+				51447AD416478A0700B571E3 /* Default-568h@2x.png in Resources */,
+				51447AD616478AE000B571E3 /* 114x114.png in Resources */,
+				51447AD816478C2B00B571E3 /* 57X57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +242,10 @@
 			files = (
 				517C259D1646F27E00C82460 /* main.m in Sources */,
 				517C25A11646F27E00C82460 /* AppDelegate.m in Sources */,
-				517C25AA1646F27E00C82460 /* FirstViewController.m in Sources */,
-				517C25B11646F27E00C82460 /* SecondViewController.m in Sources */,
+				517C25CB1646F36E00C82460 /* ListViewController.m in Sources */,
+				517C25D01646F39300C82460 /* MapViewController.m in Sources */,
+				517C25D41646F40800C82460 /* MyAnnotation.m in Sources */,
+				517C25D81646F4DA00C82460 /* MapDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,22 +258,6 @@
 				517C259A1646F27E00C82460 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		517C25B61646F27F00C82460 /* FirstViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				517C25B71646F27F00C82460 /* en */,
-			);
-			name = FirstViewController.xib;
-			sourceTree = "<group>";
-		};
-		517C25B91646F27F00C82460 /* SecondViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				517C25BA1646F27F00C82460 /* en */,
-			);
-			name = SecondViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -326,6 +354,7 @@
 				517C25C01646F27F00C82460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

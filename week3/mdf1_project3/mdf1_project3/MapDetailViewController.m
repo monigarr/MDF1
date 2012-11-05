@@ -6,13 +6,19 @@
 //  Copyright (c) 2012 Monica Peters. All rights reserved.
 //
 
+
 #import "MapDetailViewController.h"
+#import <MapKit/MapKit.h>
+#import "ListViewController.h"
+#import "MyAnnotation.h"
+#import "AppDelegate.h"
 
 @interface MapDetailViewController ()
 
 @end
 
 @implementation MapDetailViewController
+@synthesize mapBizView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,16 +29,40 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (IBAction)mapIt:(CLLocationCoordinate2D)coord title:(NSString *)title
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSString *mCoord = [[NSString alloc]initWithFormat:@"Latitude:%f Longitude:%f", coord.latitude, coord.longitude];
+    
+    name.text = title;
+    bizLocation.text = mCoord;
+    
+    MKCoordinateRegion newRegion;
+    newRegion.center.latitude = coord.latitude;
+    newRegion.center.longitude = coord.longitude;
+    newRegion.span.latitudeDelta = 0.3;
+    newRegion.span.longitudeDelta = 0.3;
+    
+    self.mapBizView.delegate = (id)self;
+    self.title = title;
+    
+    [self.mapBizView setRegion:newRegion animated:YES];
+    
+    CLLocationCoordinate2D location;
+    location.latitude = coord.latitude;
+    location.longitude = coord.longitude;
+	
+	passAnnotation = [[MyAnnotation alloc] init];
+	passAnnotation.coordinate = location;
+	passAnnotation.title = title;
+	passAnnotation.subtitle = @"toxic";
+    
+    [mapBizView addAnnotation:passAnnotation];
 }
 
-- (void)didReceiveMemoryWarning
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
